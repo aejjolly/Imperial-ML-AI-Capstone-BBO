@@ -5,7 +5,7 @@
 
 ## Documentation
 
-[<Project datasheet>][]
+[<Project datasheet>](Datasheet)
 [<Project model card>][]
 
 
