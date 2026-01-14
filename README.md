@@ -4,7 +4,7 @@
 
 This project consists of eight black box functions of growing dimensionality that mirror real-world style ML challenges. This project requires the optimisation of unkown functions using limited information reflecting a Bayesian optimisation style challenge. 
 
-The gaol is to find the maximum of eight unknown functions by:
+The goal is to find the maximum of eight unknown functions by:
 
 - Submitting a query each week using Bayesian optimisation strategies to determine which point to explore next
 - Review the resulting output each week and make informed decisions around exploration, exploitation and strategy to select the next point to update the function
