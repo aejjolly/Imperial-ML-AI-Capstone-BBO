@@ -52,3 +52,36 @@ The current time frame of 10 weeks, one query per week has been used.
 
 ## 4. Preprcoessing and uses 
 
+** Have you applied any transformations? **
+
+ - Inversion: For several functions, output data was inverted to support maximisation of the output
+ - Standardisation: Input data was scaled and standardised using StandardScalar to ensure data was optimal for Gaussian process modelling
+ - Rounding: Output and input data was rounded to six decimal points as per the requirements of the capstone submission process
+ - Log transformtion: For some input functions, log transormation was applied to ensure linear approaches in Gaussian process models worked best.
+
+** What are the intended and inappropriate uses? **
+
+** Intended uses **
+ - Bayesian optimisation of complex black-box functions.
+ - Investigating strategies for BBO and reviewing trade-offs between exploration and exploitation in real-world style ML challenges.
+
+** Inappropriate uses **
+ - Using data for other uses such as modelling for real-world settings, this data is generated and likely synthetic.
+ - Making assumptions that a small-sample size is optimal and enough to perform optimisation in real-world settings - using this as ground truth
+
+## 5. Distribution and maintenance
+
+** Where is the data set available? **
+
+The dataset is part of the Imperial ML and AI course and is made available as part of this programme. Data is available in this repository within the Data folder for users to review. 
+
+** What are the terms of use? ** 
+
+Data should be used:
+ - Only as part of this course
+ - Only for the purpose of the capstone competition to develop black-box optimisation skills
+
+** Who maintains it? **
+
+ - Data is currently mainted by A Jolly on her github, please check with the course directly for any updates beyond the scope of this capstone project. 
+
