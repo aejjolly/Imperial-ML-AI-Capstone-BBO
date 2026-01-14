@@ -1,0 +1,58 @@
+# Black-box optimisation (BBO) captsone project model card
+
+## 1. Overview
+
+**Model Name:** Gaussian Process Regressor (GPR) optimisation framework
+**Version:** 1.0 
+**Model Type:** Bayesian Optimisation (Maximisation)
+**Library:** scikit-learn 
+**Author:** Amy Jolly
+**Date:** 14/01/2026
+**License:** MIT / Academic Use Only
+
+## 2. Intended use
+
+**Primary Task:** Bayesian optimisation of eight black box functions synthetically generated to mimic real-world scenarios where black box optimisation would be needed (e.g., drug discovery)
+** Target users: ** Individuals working Bayesian optimisation strategies and approaches
+** Use case: ** Finding optimal drug compound combinations that reduce adverse effects in an expensive black box function with limited data points.
+** Limitations: ** Should be used as a training tool and not as data application into real-world
+** Input: ** Continuous values associated with the dimensionality of the function. For example, a 2D function has two input values. 
+** Output: ** A single scalar value for each function
+
+
+## 3. Details
+
+The strategy of the model has evolved during the couse of the weekly iterative queries. The general framework for Bayesian optimisation approach i have adopted is described below:
+
+** Data upload and visualisation: ** Each week, new query results are updated and uploaded into the framework. Output results are then visualised to determine whether improvements have been made and to review maaximisation problem week by week based on queries
+** Surrogate model - Guassian process: ** A Gaussian Process model is used as the surrogate model and is updated with new data. The kernel smoothness is tuned each week based on results
+** Acquisition function: ** The acquisition function used in optimisation is considered, either a upper confidence bound (UCB) or Expected Improvement (EI) based on the previous weeks results. Hyperparameters in the function are also updated to fit with the strategy that week (e.g., exploration or exploitation)
+
+A summary of the strategy is described below:
+
+  - ** Week 1: ** Initialisation of data and review of function. Early exploration using standard Bayesian optimisation framework with out of box hyperparameters
+  - ** Weeks 2-4: ** Update of acquisition functions to UCB with core visualisation to understand landscape of function. Application of predocimnantly explorative approach using UCB
+  - ** Weeks 5-7: ** Changing of acquisition functions in high dimensional data to fit with more appropriate EI. Some move towards exploitation with a bias-focused minimisation of candidate space coordinates in areas where more promising outputs can be found. 
+  - ** Weeks 8-10: ** Implementation of TurBO to optimisation approaches to focus on more exploitation in some regions. Two-stage approaches such as SVM to determine function edges for non-zero preodimnant functions of those with many local optima. 
+
+## 4. Performance
+
+Performance is measured by the maximum (Y) of the output and the cumulative changes over each week. 
+
+** Key metric: ** Y max of each function
+** Visualisation: ** Visualisation of key metrics and search space relative to confidence bounds in functions with UCB
+** Key findings:**
+  - Low dimensional functions: some issues with function 1 where bayesian optimisation was getting trapped in local optima and zero values where instead focus was needed on non-zero values, this improved with bias-focused coordinate spaces. Functions with single optima were rapidly identified by weeks 4-5 with correct changes in kernel smoothing and acquisition functions
+  - High dimensional functions: Challenges arose with incorrect use of EI where UCB more appropriate for high-dimensional approaches. Assumptions of smoothness in functions that are in fact stoachastic led to issues that were resolved with approrpriate anisotropic smoothing of Matern kernel and again a TurBo approach to selecting candidate space of hyperparameters to select from for next query
+
+## 5. Assumptions and limitations
+
+**Assumptions:**
+ - The model assumes that the black box function can be modelled as a Gaussian process.
+ - The model has strict boundaries between 0 to 1 for input values.
+
+** Limitations: **
+ -The model is derived on sparse data, although this is why Bayesian optimisation is employed. 
+ 
+
+
