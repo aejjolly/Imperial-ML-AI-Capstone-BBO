@@ -3,6 +3,10 @@
 ## :gear: Imperial's professional certificate in machine learning and artificial intelligence black box optimisation capstone project. :gear: ##
 
 
+## Documentation
+
+
+
 ## 1. Project overview
 This project consists of eight black box functions of growing dimensionality that mirror real-world style ML challenges. The goal of this project is find the maximum of each unknown function using limited information reflecting a Bayesian optimisation style challenge. 
 
