@@ -43,6 +43,11 @@ You’re tasked with optimising an ML model by tuning six hyperparameters, for e
 ### :signal_strength: Function 8 (8D): 
 You’re optimising an eight-dimensional black-box function, where each of the eight input parameters affects the output, but the internal mechanics are unknown. Your objective is to find the parameter combination that maximises the function’s output, such as performance, efficiency or validation accuracy. Because the function is high-dimensional and likely complex, global optimisation is hard, so identifying strong local maxima is often a practical strategy.
 
+## 3. Challenge objectives
+
+Maximise all eight functions using a series of queries during black-box optimisation. There are a small number of data points to begin with making this a challenging approach. 
+
+
 
 ## Model
 
