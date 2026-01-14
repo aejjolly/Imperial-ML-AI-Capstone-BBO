@@ -2,19 +2,19 @@
 
 ## :gear: Imperial's professional certificate in machine learning and artificial intelligence black box optimisation capstone project. :gear: ##
 
-This project consists of eight black box functions of growing dimensionality that mirror real-world style ML challenges. This project requires the optimisation of unkown functions using limited information reflecting a Bayesian optimisation style challenge. 
+This project consists of eight black box functions of growing dimensionality that mirror real-world style ML challenges. The goal of this project is find the maximum of each unknown function using limited information reflecting a Bayesian optimisation style challenge. 
 
-The goal is to find the maximum of eight unknown functions by:
+In summary: 
 
-- Submitting a query each week using Bayesian optimisation strategies to determine which point to explore next
-- Review the resulting output each week and make informed decisions around exploration, exploitation and strategy to select the next point to update the function
-- Continue to employ new techniques and consider week on week how to improve optimisation with the limited data available.
+-The function forms are unknown and may contain many local optima
+-Visualisations are not provided 
+-Each evaluation is “expensive”, hence the need for strategies such as Bayesian optimisation
+-Only one query per function per week is allowed.
 
 ##  :rocket: Data :rocket:
 
-There are eight functions to explore, representing real-world scenarios such as drug discovery, radiation detection or manufacturing requirements which are expensive to explore or have limited data to work with. 
+Each function is described below representing real-world scenarios such as drug discovery, radiation detection or manufacturing requirements which are expensive to explore or have limited data to work with:
 
-Each function is described below:
 
 ### :oil_drum: Function 1:
 Detect likely contamination sources in a two-dimensional area, such as a radiation field, where only proximity yields a non-zero reading. The system uses Bayesian optimisation to tune detection parameters and reliably identify both strong and weak sources.
