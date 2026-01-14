@@ -6,10 +6,10 @@ This project consists of eight black box functions of growing dimensionality tha
 
 In summary: 
 
--The function forms are unknown and may contain many local optima
--Visualisations are not provided
--Each evaluation is “expensive”, hence the need for strategies such as Bayesian optimisation
--Only one query per function per week is allowed.
+  - The function forms are unknown and may contain many local optima
+  - Visualisations are not provided
+  - Each evaluation is “expensive”, hence the need for strategies such as Bayesian optimisation
+  - Only one query per function per week is allowed.
 
 ##  :rocket: Data :rocket:
 
