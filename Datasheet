@@ -1,0 +1,54 @@
+# Datasheet for the captsone black-box optimisation (BBO) project
+
+## 1. Motivation
+
+** Why did you create this data set? **
+ - This dataset was created as part of the black-box optimisation (BBO) challenge set for the Imperial machine learning and artificial intelligence capstone project. The objective of this challenge was to provide data that mimicked real-world scenarios where machine learning and Bayesian optimisation approaches would be needed for black-box functions that are unknown and "expensive" to optimise or have limited data to work with. For example for drug-discovery challenges or identifying radiation fields in a two dimesnional space. 
+** What task does it support? **
+ - The data supports the task of Bayesian optimisation which is a valuable tool implemented in machine learning across many industries. This a smart iterative based search strategy that utilises inputs and outputs to determine the next optimal candidate inputs to explore for expensive unknown functions. Each iteration provides information about the next best coordinates to search in multi-dimensional functions without needing to search the entire candidate space which may be computationally expensive of infeasible in terms of time. 
+
+## 2. Composition
+
+** What does it contain? ** 
+
+The dataset contains eight black-box functions of varying dimensionality ranging from 2-D to 8-D. The initial data used in this capstone project is located in Data/Inputs_Outputs/Week 1.  Inputs and outputs are updated each week during the project based on the iterative queries provided and are represented in their Week X folders. For each week, the previous queries inputs and outputs are appended to the files for consisency and to review optimisation week by week throughout the course of the project.
+
+** What is the size and format and are there any gaps? ** 
+
+The raw data provided at the start of the challenge is located in the Week 1 folder. The composition of the data is as follows and remains consistent throughout the challenge weeks:
+
+ - The input.txt file consists of vector arrays of values representing input data for each function
+ - Each vector array (row) represents a function, beginning at Function 1 up to Function 8
+ - The number of input values represents the number of dimensions for that function, e.g., Function 1 is a 2D function and therefore has 2 input values in its array.
+
+ - The output.txt file consists of the output data for each function which is a single scalar value
+ - Each row represents a function, with the first entry representing function 1 and the last entry representing function 8.
+
+## 3. Collection process
+
+** How were the queries generated? **
+
+ - Each week, a new query is generated using a Bayesian optimisation framework based on the previous weeks information. Each week represents a new set of input values and associated output value for each function. The approach is as follows:
+
+  - A query of candidate input values is submitted to the captone portal
+  - The resulting output value for that query is provided back
+  - The input and output files are updated within each week by appending these new queries onto all previous datapoints
+  - This data is then uploaded into the Bayesian optimisation framework for review
+  -  Decisions around strategy for the next query submission are considered and updates to surrogate models and acquiisition functions are made based on this (e.g., exploration or exploitation approaches)
+  - A new set of input values (e.g., a query) is generated and submitted. 
+
+** What strategy did you use? **
+
+My strategy consisted of:
+
+ - Implementing visualisation of output values and input coordinate spaces week by week to review how well the previous weeks query performed
+ - Reviewing the results of the newest round of outputs relative to all previous week queries to determine whether we are seeing improvements for each function or whether there are clear issues to rectify
+ - Updating Gaussian process models or splitting surrogate models with two stages (e.g., SVM or restricting search spaces)
+ - Updating hyperparameters such as kernel smoothness, acquisition functions or even hyperparameters in acquisition functions to optimise exploration-exploitation trade offs week by week.
+
+** Over what time frame? ** 
+
+The current time frame of 10 weeks, one query per week has been used.
+
+## 4. Preprcoessing and uses 
+
