@@ -6,7 +6,7 @@
 ## Documentation
 
 [Project datasheet](Datasheet)
-[Project model card][Modelcard]
+[Project model card](ModelCard)
 
 
 ## 1. Project overview
