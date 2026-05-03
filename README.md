@@ -55,7 +55,7 @@ Maximise all eight functions using a series of queries during black-box optimisa
 
 
 
-## Model dependencies
+## 4. Model dependencies
 
 The project and models utilised the following python packages:
 
@@ -64,7 +64,7 @@ The project and models utilised the following python packages:
 - Pandas
 - Scipy
 
-## Hyperparameter optimisation strategies
+## 5. Hyperparameter optimisation strategies
 
 The optimisation strategy evolved throughout the capstone challenge in response to the new data observed each week (e.g., the posterior distribution in Bayesian optimisation).
 
@@ -88,7 +88,7 @@ The optimisation strategy evolved throughout the capstone challenge in response 
 -*Insight:* This helped to further identify function shape particularly in high-dimnesional data and functions where there were predominant zero points.
 
 
-## Key Results
+## 6. Key Results
 ![Screenshot](image.png)
 
 
