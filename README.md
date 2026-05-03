@@ -55,12 +55,45 @@ Maximise all eight functions using a series of queries during black-box optimisa
 
 
 
-## Model
+## Model dependencies
 
-## Hyperparameter optimisation
+The project and models utilised the following python packages:
 
-## Results
+- Scikit-learn 
+- Numpy
+- Pandas
+- Scipy
+
+## Hyperparameter optimisation strategies
+
+The optimisation strategy evolved throughout the capstone challenge in response to the new data observed each week (e.g., the posterior distribution in Bayesian optimisation).
+
+### Phase 1 (Weeks 1-4): Exploration
+
+-*Method:* Standard Gaussian Processes with higher kappa
+-*Goal:* Create a becnhmark of baseline data, exploring the function space regions with high uncertainty
+-*Insight:* Standard out of the box approaches were not performing well where the function was not smooth.
+
+
+### Phase 2 (Weeks 5-10): Improved modelling of noise 
+
+-*Method:* Remove smoothness of kernel and apply a more anisotropic kernel using multiple length scales
+-*Goal:* To account for non-smoothness of some functions ensuring no false positives around local optima and to account for varying importance of dimensions in a function. 
+-*Insight:* Improved optimisation in non-smooth functions and helped to avoid optimisation fixating on local optima and corners of gridspace.
+
+### Phase 3 (Weeks 11-13): Trust regions and verification
+
+-*Method:* Implementation of Trust Region Bayesian optimisation (TuRBO)
+-*Goal:* Further improve efficiency of BO by optimising by regions where there is already data before expanding.
+-*Insight:* This helped to further identify function shape particularly in high-dimnesional data and functions where there were predominant zero points.
+
+
+## Key Results
 ![Screenshot](image.png)
 
 
+
 ## Contact details
+
+Dr Amy Jolly
+amy.jolly88@gmail.com
