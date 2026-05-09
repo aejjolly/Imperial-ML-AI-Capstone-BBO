@@ -89,7 +89,14 @@ The optimisation strategy evolved throughout the capstone challenge in response 
 
 
 ## 6. Key Results
-![Screenshot](image.png)
+![Screenshot](function_1/function1_FINAL.png)
+![Screenshot](function_2/function2_FINAL.png)
+![Screenshot](function_3/function3_FINAL.png)
+![Screenshot](function_4/function4_FINAL.png)
+![Screenshot](function_5/function5_FINAL.png)
+![Screenshot](function_6/function6_FINAL.png)
+![Screenshot](function_7/function7_FINAL.png)
+![Screenshot](function_8/function8_FINAL.png)
 
 
 
