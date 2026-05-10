@@ -55,9 +55,11 @@ Maximise all eight functions using a series of queries during black-box optimisa
 
 
 
-## 4. Model dependencies
+## 4. Model and package dependencies
 
-The project and models utilised the following python packages:
+For this challenge, a Bayesian optimisation (BO) framework was applied using Gaussian Process (GP) surrogate models and different acquisition functions such as upper confidence bound (UCB) and expected Improvement (EI) to determine the next optimal query values. In later stages, the application of trust-region sampling was used to improve optimisation in high confidence areas. 
+
+The project and models utilised the following python packages to acheive this.
 
 - Scikit-learn 
 - Numpy
