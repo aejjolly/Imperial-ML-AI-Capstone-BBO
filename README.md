@@ -88,14 +88,23 @@ The optimisation strategy evolved throughout the capstone challenge in response 
 -*Insight:* This helped to further identify function shape particularly in high-dimnesional data and functions where there were predominant zero points.
 
 
-## 6. Key Results
+## 6. Results
+
+*Function 1*
 ![Screenshot](function_1/function1_FINAL.png)
+*Function 2*
 ![Screenshot](function_2/function2_FINAL.png)
+*Function 3*
 ![Screenshot](function_3/function3_FINAL.png)
+*Function 4*
 ![Screenshot](function_4/function4_FINAL.png)
+*Function 5*
 ![Screenshot](function_5/function5_FINAL.png)
+*Function 6*
 ![Screenshot](function_6/function6_FINAL.png)
+*Function 7*
 ![Screenshot](function_7/function7_FINAL.png)
+*Function 8*
 ![Screenshot](function_8/function8_FINAL.png)
 
 
