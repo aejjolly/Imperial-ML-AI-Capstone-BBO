@@ -90,6 +90,8 @@ The optimisation strategy evolved throughout the capstone challenge in response 
 
 ## 6. Results
 
+Optimisation results were variable accross the functions. In some functions, such as function 1, 7 and 8, optimisation proved relatively successful identifying a clear landscape and shape of the function with good minimisation. These functions benefited from anisotropic kernel functions, meaning understanding that each dimensions will have differential contributions to the output. For other functions, such as function 2, my optimisation was poor, with evidence that my approach was getting stuck in local optima and at the edges of feature spaces (a common issue in BO that needs to be addressed). 
+
 *Function 1*
 ![Screenshot](function_1/function1_FINAL.png)
 *Function 2*
